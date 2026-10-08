@@ -1,0 +1,131 @@
+:root{
+    --font_f_1: ;
+
+    --color_1:#F95738;
+    --color_2:#EE964B ;
+    --color_3:#F4D35E;
+    --color_4:#FAF0CA;
+    --color_5:#0D3B66;
+    --color_6:#0077B6;
+    --color_7:#CAF0F8;
+
+    --family_1: impact;
+    --family_2: Calibri;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: linear-gradient(var(--color_1), var(--color_2), var(--color_3));
+    color: var(--color_5);
+    font-family: var(--family_1);
+    font-size: 3.8rem;
+    padding: 2rem;
+}
+
+nav{
+    background: linear-gradient(var(--color_7), var(--color_6));
+    font-family: var(--family_1);
+    font-size: 1.8rem;
+    padding: 1.5rem;
+
+    
+    a:link{
+        color: var(--color_5)
+    }
+    a:visited{
+        color: var(--color_5)
+    }
+    a:hover{
+        color: var(--color_7);}
+}
+
+main{
+    padding-top: 30px;
+    background:var(--color_4);
+}
+
+.information_box {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* Osynlig 200x200 ruta för organisering:) */
+.drop_box {
+    width: 200px;
+    height: 200px;
+
+    flex: 0 0 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Själva droppen */
+.drop {
+    width: 160px;
+    height: 160px;
+
+    background-color: var(--color_6);
+
+    border-radius: 50%;
+    border-top-right-radius: 0;
+
+    transform: rotate(-45deg);
+
+    border: 5px solid var(--color_7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+
+/* Roterar innehållet tillbaka */
+.drop_content {
+    transform: rotate(45deg);
+    text-align: center;
+}
+
+    
+
+
+
+footer{
+    font-size: 1.1rem;
+    color: var(--color_4);
+    background: var(--color_5);
+    padding: 1.5rem;
+}
+
+
+
+.center{
+    display:grid;
+    place-content: center;
+    
+}
+
+.center_2{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
